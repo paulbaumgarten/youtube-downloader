@@ -1,7 +1,8 @@
 # youtube-downloader
+
 Yet another Youtube downloader
 
-## Installation
+## Install & run
 
 Windows
 
@@ -17,9 +18,14 @@ Mac / Linux
 
 ```bash
 python3 -m venv venv
-venv/scripts/activate
+source venv/bin/activate
 pip3 install -r requirements.txt
 python3 youtube-downloader.py
 deactivate
 ```
+
+## Dependencies
+
+Uses the [pafy](https://github.com/mps-youtube/pafy) library.
+
 
