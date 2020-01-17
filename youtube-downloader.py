@@ -77,7 +77,7 @@ class YoutubeDownloaderApp():
         url = self.url_entry.get()
         folder = self.target_folder_entry.get()
         video = pafy.new(url, ydl_opts={'nocheckcertificate': True, "--no-check-certificate": True})
-        if mode:
+        if mode == "video":
             best = video.getbestvideo(preftype="mp4")
         else:
             best = video.getbestaudio(preftype="m4a")
